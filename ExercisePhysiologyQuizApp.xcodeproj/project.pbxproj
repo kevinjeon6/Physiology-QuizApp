@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7422E0B12814434000A0C53F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7422E0B02814434000A0C53F /* GoogleService-Info.plist */; };
 		74DF7318281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */; };
 		74DF731A281349810096DFA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7319281349810096DFA2 /* ContentView.swift */; };
 		74DF731C281349890096DFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DF731B281349890096DFA2 /* Assets.xcassets */; };
 		74DF731F281349890096DFA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DF731E281349890096DFA2 /* Preview Assets.xcassets */; };
+		E541FA1A93CF006EF87AE630 /* Pods_ExercisePhysiologyQuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54D1AB716812B99A0E0557CF /* Pods-ExercisePhysiologyQuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExercisePhysiologyQuizApp.debug.xcconfig"; path = "Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExercisePhysiologyQuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7422E0B02814434000A0C53F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74DF7314281349800096DFA2 /* ExercisePhysiologyQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExercisePhysiologyQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePhysiologyQuizAppApp.swift; sourceTree = "<group>"; };
 		74DF7319281349810096DFA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74DF731B281349890096DFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DF731E281349890096DFA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9A607ECF684470C2755F9C4 /* Pods-ExercisePhysiologyQuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExercisePhysiologyQuizApp.release.xcconfig"; path = "Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E541FA1A93CF006EF87AE630 /* Pods_ExercisePhysiologyQuizApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7422E0B22814453700A0C53F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74DF7319281349810096DFA2 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		74DF730B281349800096DFA2 = {
 			isa = PBXGroup;
 			children = (
 				74DF7316281349800096DFA2 /* ExercisePhysiologyQuizApp */,
 				74DF7315281349800096DFA2 /* Products */,
+				D1F1F934C8CFA8C20110C6A7 /* Pods */,
+				858FCB25425C418F1B26AC91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */,
-				74DF7319281349810096DFA2 /* ContentView.swift */,
+				7422E0B22814453700A0C53F /* Views */,
+				7422E0B02814434000A0C53F /* GoogleService-Info.plist */,
 				74DF731B281349890096DFA2 /* Assets.xcassets */,
 				74DF731D281349890096DFA2 /* Preview Content */,
 			);
@@ -67,6 +85,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		858FCB25425C418F1B26AC91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1F1F934C8CFA8C20110C6A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54D1AB716812B99A0E0557CF /* Pods-ExercisePhysiologyQuizApp.debug.xcconfig */,
+				E9A607ECF684470C2755F9C4 /* Pods-ExercisePhysiologyQuizApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74DF7322281349890096DFA2 /* Build configuration list for PBXNativeTarget "ExercisePhysiologyQuizApp" */;
 			buildPhases = (
+				8891C4592270765AFACE9FEB /* [CP] Check Pods Manifest.lock */,
 				74DF7310281349800096DFA2 /* Sources */,
 				74DF7311281349800096DFA2 /* Frameworks */,
 				74DF7312281349800096DFA2 /* Resources */,
+				C2F6C4188B8709698FD1E33C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,10 +164,53 @@
 			files = (
 				74DF731F281349890096DFA2 /* Preview Assets.xcassets in Resources */,
 				74DF731C281349890096DFA2 /* Assets.xcassets in Resources */,
+				7422E0B12814434000A0C53F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8891C4592270765AFACE9FEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExercisePhysiologyQuizApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F6C4188B8709698FD1E33C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74DF7310281349800096DFA2 /* Sources */ = {
@@ -261,6 +341,7 @@
 		};
 		74DF7323281349890096DFA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D1AB716812B99A0E0557CF /* Pods-ExercisePhysiologyQuizApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +371,7 @@
 		};
 		74DF7324281349890096DFA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A607ECF684470C2755F9C4 /* Pods-ExercisePhysiologyQuizApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
