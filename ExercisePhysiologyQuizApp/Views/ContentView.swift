@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            VStack{
+                Text("Main screen of different quiz options")
+            }
+            .navigationTitle("Quizzes")
+        }
     }
 }
 
