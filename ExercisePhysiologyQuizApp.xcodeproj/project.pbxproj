@@ -10,6 +10,7 @@
 		7422E0B12814434000A0C53F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7422E0B02814434000A0C53F /* GoogleService-Info.plist */; };
 		7453F6232817315D0002DE5D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7453F6222817315D0002DE5D /* data.json */; };
 		7453F625281734C70002DE5D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453F624281734C60002DE5D /* Quiz.swift */; };
+		7453F627281736F20002DE5D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453F626281736F20002DE5D /* ContentViewModel.swift */; };
 		74DF7318281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */; };
 		74DF731A281349810096DFA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7319281349810096DFA2 /* ContentView.swift */; };
 		74DF731C281349890096DFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DF731B281349890096DFA2 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		7422E0B02814434000A0C53F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7453F6222817315D0002DE5D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		7453F624281734C60002DE5D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		7453F626281736F20002DE5D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		74DF7314281349800096DFA2 /* ExercisePhysiologyQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExercisePhysiologyQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePhysiologyQuizAppApp.swift; sourceTree = "<group>"; };
 		74DF7319281349810096DFA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		7453F6202817312B0002DE5D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7453F626281736F20002DE5D /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7453F627281736F20002DE5D /* ContentViewModel.swift in Sources */,
 				74DF731A281349810096DFA2 /* ContentView.swift in Sources */,
 				74DF7318281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift in Sources */,
 				7453F625281734C70002DE5D /* Quiz.swift in Sources */,
