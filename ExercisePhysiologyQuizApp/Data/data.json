@@ -1,0 +1,756 @@
+[
+        {
+        "id": 0,
+        "category": "Skeletal Muscle",
+        "content": {
+            "id": 0,
+            "image": "muscle",
+            "description": "This is to test your knowledge on the structure and function of skeletal muscle",
+            "test": {
+                "id": 0,
+                "questions": [
+                    {
+                        "id": 0,
+                        "content": "What connective tissue surrounds the entire muscle?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Epimysium",
+                            "Perimysium",
+                            "Endomysium",
+                            "Plasmalemma"
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "content": "What structure of a muscle fiber serves as an extension of the plasmalemma?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Sarcoplasm",
+                            "Satellite Cells",
+                            "Transverse tubules",
+                            "Sarcoplasmic reticulum"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "content": "What protein is the principal component of skeletal muscle thick filaments?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Actin",
+                            "Myosin",
+                            "Troponin",
+                            "Tropomyosin"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "content": "What protein is the principal component of skeletal muscle thick filaments?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Actin",
+                            "Myosin",
+                            "Troponin",
+                            "Tropomyosin"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "content": "A ________ contraction causes the muscle to lengthen while producing force",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Eccentric",
+                            "Concentric",
+                            "Isometric",
+                            "Isokinetic"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "content": "Type I muscle fibers",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Fatigue quickly",
+                            "Produce more force than Type II muscle fibers",
+                            "Are predominate in sprinters",
+                            "Are considered slow twitch"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "content": "Which protein shields the myosin-binding site, preventing contraction from happening at rest?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Actin",
+                            "Myosin",
+                            "Troponin",
+                            "Tropomyosin"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "content": "Which receptors are sensitive to muscle length and the rate of change?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Muscle spindles",
+                            "Golgi tendon organs",
+                            "Chemoreceptors",
+                            "Joint kinesthetic receptors"
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "content": "Ca2+ ions (essential for contraction) are stored in the?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Sarcoplasm",
+                            "Sarcolemma",
+                            "Sarcoplasmic reticulum",
+                            "T-tubules"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "content": "The motor neuron and all the muscle fibers it innervates is called a _______?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Motor junction",
+                            "Motor unit",
+                            "Motor end plate",
+                            "Motor nerve"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": 1,
+        "category": "Cardiovascular System",
+        "content": {
+            "id": 0,
+            "image": "cardiovascular",
+            "description": "This is to test your knowledge on the cardiovascular system",
+            "test": {
+                "id": 0,
+                "questions": [
+                    {
+                        "id": 0,
+                        "content": "The left side of the heart receives oxygenated blood from the lungs and pumps blood into the aorta for distribution throughout the body in which of the following?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Systemic circulation",
+                            "Pulmonary circulation",
+                            "Arterioles",
+                            "Myocardium"
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "content": "Which of the following connects the right atrium to the right ventricle?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Bicuspid valve",
+                            "Tricuspid valve",
+                            "Mitral valve",
+                            "Semilunar valve"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "content": "The difference between systolic and diastolic pressure is referred to as?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Normal pressure",
+                            "Pulse pressure",
+                            "Heart rate",
+                            "Rate pressure product"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "content": "Which of the following is referred to as \"resistance vessels\"?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Capillaries",
+                            "Arteries",
+                            "Arterioles",
+                            "Veins"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "content": "Which type of blood vessel allows exchange of nutrients, wastes, and blood gases?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Arterioles",
+                            "Venules",
+                            "Veins",
+                            "Capillaries"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "content": "Cardiac output is a product of which of the following variables?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Heart rate and a-vO2 difference",
+                            "Stroke volume and heart rate",
+                            "Heart rate and blood flow",
+                            "VO2max and heart rate"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "content": "Which phase of the cardiac cycle is the longest?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Atrial systole",
+                            "Diastole",
+                            "Ventricular systole",
+                            "Same length as systole"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "content": "Which chamber of the heart has the thickest walls?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Right atrium",
+                            "Left atrium",
+                            "Right ventricle",
+                            "Left ventricle"
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "content": "The mechanism that underlies preload's effects on stroke voluem is the?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Frank-Starling mechanism",
+                            "Hering-Breuer mechanism",
+                            "Willis mechanism",
+                            "End-diastolic mechanism"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "content": "The _____ represents atrial depolarization during a recording of the electrical activity (i.e. ECG) of the heart",
+                        "correctIndex": 0,
+                        "answers": [
+                            "P wave",
+                            "QRS complex",
+                            "T wave",
+                            "R wave"
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+    },
+    {
+        "id": 2,
+        "category": "Bioenergetics",
+        "content": {
+            "id": 0,
+            "image": "bioenergetics",
+            "description": "This is to test your knowledge on bioenergetics",
+            "test": {
+                "id": 0,
+                "questions": [
+                    {
+                        "id": 0,
+                        "content": "Which enzyme plays a role in lipolysis?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Hormone-sensitive lipase",
+                            "Creatine kinase",
+                            "Lactate dehydrogenase",
+                            "Adenylate kinase"
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "content": "For aerobic metabolism, free fatty acids must b e converted to Acetyl-CoA via?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Krebs Cycle",
+                            "Electron transport chain",
+                            "Beta-oxidation",
+                            "Core-cycle"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "content": "In which part of the muscle cell does ATP-PCr system occur?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Sarcolemma",
+                            "Cytoplasm",
+                            "Nucleus",
+                            "Mitochondria"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "content": "Each pair of electrons passed through the electron transport chain from FADH to oxygen releases enough energy to form?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "1.5 ATP",
+                            "2.5 ATP",
+                            "5.0 ATP",
+                            "10.0 ATP"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "content": "The metabolic process of converting foodstuffs into a biological usable form of energy is called?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Bioenergetics",
+                            "Metabolism",
+                            "Glycolysis",
+                            "Substrates"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "content": "Which enzyme plays a role in converting blood glucose to Glucose-6-phosphate?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Hormone-sensitive lipase",
+                            "Hexokinase",
+                            "Lactate dehydrogenase",
+                            "Phosphofructokinase"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "content": "The net production of ATP by substrate-level phosphorylation in glycolysis is?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "3 from glucose and 4 from glycogen",
+                            "2 from glucose and 4 from glycogen",
+                            "3 from glucose and 3 from glycogen",
+                            "2 from glucose and 3 from glycogen"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "content": "Acetyl-CoA combines with ______ to form citrate which follows a series of reactions",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Oxaloacetate",
+                            "Isocitrate",
+                            "Malate",
+                            "Fumarate"
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "content": "What process occurs when lactate is produced from tissues and circulates to other tissues to convert to pyruvate?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Intracellular Lactate Shuttle",
+                            "Cori Cycle",
+                            "Cell to Cell Lactate Shuttle",
+                            "Carnitine Shuttle"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "content": "The final electron acceptor in the electron transport chain system is?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "NAD",
+                            "Hydrogen",
+                            "Oxygen",
+                            "ATP"
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+    },
+    {
+        "id": 3,
+        "category": "Respiratory",
+        "content": {
+            "id": 0,
+            "image": "respiratory",
+            "description": "This is to test your knowledge on Respiratory system",
+            "test": {
+                "id": 0,
+                "questions": [
+                    {
+                        "id": 0,
+                        "content": "The lungs contain more than 600 million?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Alveoli",
+                            "Bronchioles",
+                            "Trachea",
+                            "Air molecules"
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "content": "Which zone includes the trachea and terminal bronchioles?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Transitional zone",
+                            "Respiratory zone",
+                            "Trachea zone",
+                            "Conducting zone"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "content": "What term is given to forced exhalation against a closed glottis?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Intrathoracic pressure",
+                            "Hyperventilation",
+                            "Biphasic response",
+                            "Valsalva maneuver"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "content": "What principle governs the fact that an air mixture's total pressure equals the sum of the partial pressures of the individual gases in the mixture?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Torr's law",
+                            "Dalton's law",
+                            "Henry's law",
+                            "Partial pressure"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "content": "Most of the O2 contained in the blood",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Exists in solution as a dissolved gas",
+                            "Is bound to hemoglobin as oxyhemoglobin",
+                            "Is in the form of carboxyhemoglobin",
+                            "Is in the form of deoxyhemoglobin"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "content": "Carbon dioxide is transported in arterial blood principally as?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Carbaminohemoglobin",
+                            "Dissolved CO2 in solution in the blood",
+                            "Bicarbonate",
+                            "Carbon monoxide"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "content": "In hemoglobin, CO2 binds to",
+                        "correctIndex": 1,
+                        "answers": [
+                            "The iron in the heme",
+                            "The globular protein",
+                            "The heme (noniron portion)",
+                            "Both heme and globular protein"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "content": "As bicarbonate diffuses from the red blood cell into the plasma, _____ moves from the plasma into the red blood cell to prevent electrical imbalance",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Chloride",
+                            "Sodium",
+                            "Potassium",
+                            "Calcium"
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "content": "An increase in blood temperature and a decrease in blood pH would result in _____ in the oxyhemoglobin dissociation curve",
+                        "correctIndex": 2,
+                        "answers": [
+                            "No change",
+                            "A leftward shift",
+                            "A rightward shift",
+                            "None of the above answers are correct"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "content": "Which muscle is NOT involved in inspiration (at rest and exercise)?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Scalenes",
+                            "Internal intercostals",
+                            "External intercostals",
+                            "Pectoralis minor"
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+    },
+    {
+        "id": 4,
+        "category": "Neural Control",
+        "content": {
+            "id": 0,
+            "image": "neural",
+            "description": "This is to test your knowledge on Neural Control of Human Movement",
+            "test": {
+                "id": 0,
+                "questions": [
+                    {
+                        "id": 0,
+                        "content": "Anatomically, the nervous system can be divided into two main parts:",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Afferent and Efferent",
+                            "Central nervous system and Peripheral nervous system",
+                            "Sensory and Motor",
+                            "Sympathetic and Parasympathetic"
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "content": "Neurons can be divided into three basic components:",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Cell body, soma, and axon",
+                            "Soma, dendrites, and Schwann cells",
+                            "Cell body, dendrites, and axon",
+                            "Afferent, efferent, and dendrites"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "content": "Neurons are negatively charged on the inside of the cell with respect to the charge on the exterior of the cell. This electrical charge difference is called?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Irritability",
+                            "Conductivity",
+                            "Action potential",
+                            "Resting membrane potential"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "content": "Which ion channels open more during depolarization?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Na+",
+                            "K+",
+                            "Cl-",
+                            "Ca2+"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "content": "The autonomic nervous system can be divided into two functional and anatomical divisions called?",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Sympathetic and Unsympathetic",
+                            "Sympathetic and Parasympathetic",
+                            "Afferent and Efferent",
+                            "None of the above answers are correct"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "content": "The neurotransmitter used in the Parasympathetic nervous system is?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Acetylcholine",
+                            "Norepinephrine",
+                            "Serotonin",
+                            "Dopamine"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "content": "Which region of the diencephalon oversees homeostatic control of blood pressure, heart rate, breathing, and body temperature?",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Epithalamus",
+                            "Pineal gland",
+                            "Thalamus",
+                            "Hypothalamus"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "content": "The Golgi tendon organs monitor?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Tension produced by muscular contraction",
+                            "The length of muscle",
+                            "The concentration of sodium ions in the sarcoplasm",
+                            "The position of joints during movement"
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "content": "The job of an Afferent neuron is to?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Send impulses from the body to the brain",
+                            "Send impulses from the brain to the body",
+                            "Send impulses to skeletal muscle",
+                            "Send impulses to the viscera (heart, lungs, etc.)"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "content": "The Midbrain, Pons, and Medulla oblongata is the?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Cerebellum",
+                            "Basal ganglia",
+                            "Brainstem",
+                            "Cerebral cortex"
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+    },
+    {
+        "id": 5,
+        "category": "Endocrine",
+        "content": {
+            "id": 0,
+            "image": "endocrine",
+            "description": "This is to test your knowledge on Endocrine system",
+            "test": {
+                "id": 0,
+                "questions": [
+                    {
+                        "id": 0,
+                        "content": "While both the nervous and endorcrine systems are critical for communication and coordination of body systems, the endocrine system responds more?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Slowly but has longer-lasting effects",
+                            "Quickly but has longer-lasting effects",
+                            "Slowly but has shorter-lasting effects",
+                            "Quickly but has shorter-lasting effects"
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "content": "Nonsteroid hormones are characteristically",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Cholesterol and lipid based",
+                            "Glucose and carbohydrate based",
+                            "Amino acid and protein based",
+                            "RNA and nucleic acid based"
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "content": "A key characteristic of prostaglandins is that they",
+                        "correctIndex": 2,
+                        "answers": [
+                            "Have anti-inflammatory effects",
+                            "Target muscle cells for growth",
+                            "Exert their effects locally",
+                            "Inhibit pain and swelling"
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "content": "The anterior pituitary is controlled by?",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Hypothalamic hormones",
+                            "Hypothalamic nerve signals",
+                            "Hypothalamic movement",
+                            "Posterior pituitary hormones"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "content": "Leptin:",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Is higher in obese individuals",
+                            "Is secreted from adipose tissue",
+                            "Increases satiety",
+                            "All answers are characteristics of leptin"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "content": "Ghrelin",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Increases appetite",
+                            "Secreted from stomach and pancreas",
+                            "Is considered the Hunger hormone",
+                            "All answers are characteristics of Ghrelin"
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "content": "Which of the following pairs of hormones typically act in opposition?",
+                        "correctIndex": 2,
+                        "answers": [
+                            "GH and aldosterone",
+                            "Thyrotropin and cortisol",
+                            "Insulin and glucagon",
+                            "Epinephrine and T3"
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "content": "During exercise, glucagon concentrations _______, and insulin concentrations ______",
+                        "correctIndex": 3,
+                        "answers": [
+                            "Increase, increase",
+                            "Decrease, increase",
+                            "Decrease, decrease",
+                            "Increase, decrease"
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "content": "Which of the following is NOT true regarding growth hormone (GH)",
+                        "correctIndex": 0,
+                        "answers": [
+                            "Promotes atrophy",
+                            "Is a potent anabolic hormone",
+                            "Stimulates fat metabolism",
+                            "Releases proportionally to exercise intensity"
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "content": "Insulin is secreted by ____ of the pancreas",
+                        "correctIndex": 1,
+                        "answers": [
+                            "Alpha cells",
+                            "Beta cells",
+                            "Delta cells",
+                            "Gamma cells"
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+    }
+]
