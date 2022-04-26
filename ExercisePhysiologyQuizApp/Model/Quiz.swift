@@ -12,11 +12,11 @@ struct Quiz: Decodable, Identifiable {
     
     var id: Int
     var category: String
-    var content: Content
+    var course: Course
 }
 
 
-struct Content: Decodable, Identifiable {
+struct Course: Decodable, Identifiable {
     var id: Int
     var image: String
     var description: String

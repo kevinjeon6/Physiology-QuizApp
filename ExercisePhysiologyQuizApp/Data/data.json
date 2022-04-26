@@ -2,7 +2,7 @@
         {
         "id": 0,
         "category": "Skeletal Muscle",
-        "content": {
+        "course": {
             "id": 0,
             "image": "muscle",
             "description": "This is to test your knowledge on the structure and function of skeletal muscle",
@@ -126,12 +126,12 @@
     {
         "id": 1,
         "category": "Cardiovascular System",
-        "content": {
-            "id": 0,
+        "course": {
+            "id": 1,
             "image": "cardiovascular",
             "description": "This is to test your knowledge on the cardiovascular system",
             "test": {
-                "id": 0,
+                "id": 1,
                 "questions": [
                     {
                         "id": 0,
@@ -252,12 +252,12 @@
     {
         "id": 2,
         "category": "Bioenergetics",
-        "content": {
-            "id": 0,
+        "course": {
+            "id": 2,
             "image": "bioenergetics",
             "description": "This is to test your knowledge on bioenergetics",
             "test": {
-                "id": 0,
+                "id": 2,
                 "questions": [
                     {
                         "id": 0,
@@ -378,12 +378,12 @@
     {
         "id": 3,
         "category": "Respiratory",
-        "content": {
-            "id": 0,
+        "course": {
+            "id": 3,
             "image": "respiratory",
             "description": "This is to test your knowledge on Respiratory system",
             "test": {
-                "id": 0,
+                "id": 3,
                 "questions": [
                     {
                         "id": 0,
@@ -504,12 +504,12 @@
     {
         "id": 4,
         "category": "Neural Control",
-        "content": {
-            "id": 0,
+        "course": {
+            "id": 4,
             "image": "neural",
             "description": "This is to test your knowledge on Neural Control of Human Movement",
             "test": {
-                "id": 0,
+                "id": 4,
                 "questions": [
                     {
                         "id": 0,
@@ -630,12 +630,12 @@
     {
         "id": 5,
         "category": "Endocrine",
-        "content": {
-            "id": 0,
+        "course": {
+            "id": 5,
             "image": "endocrine",
             "description": "This is to test your knowledge on Endocrine system",
             "test": {
-                "id": 0,
+                "id": 5,
                 "questions": [
                     {
                         "id": 0,
