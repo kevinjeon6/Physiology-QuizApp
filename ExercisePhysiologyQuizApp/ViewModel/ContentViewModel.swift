@@ -25,21 +25,23 @@ class ContentViewModel: ObservableObject {
     func getLocalData() {
         //Create a URL
         
-        let jsonURL = Bundle.main.url(forResource: "data", withExtension: "json")
+        let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
         
-       
+  
         
         do {
             //Read the file into a data object
-            let jsonData = try Data(contentsOf: jsonURL!)
+            let jsonData = try Data(contentsOf: jsonUrl!)
             let jsonDecoder = JSONDecoder()
             
-            let quizModules = try jsonDecoder.decode([Quiz].self, from: jsonData)
-            
+           let quizModules = try jsonDecoder.decode([Quiz].self, from: jsonData)
+  
+        
             //Assign parsed modules to quizModules property
             self.quizModules = quizModules
         } catch {
-            print(error)
+            print("Couldn't parse local data")
         }
+       
     }
 }
