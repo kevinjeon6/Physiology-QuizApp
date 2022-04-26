@@ -77,6 +77,13 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		74616677281881E100ADAA17 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		74DF730B281349800096DFA2 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */,
+				74616677281881E100ADAA17 /* Components */,
 				7453F621281731380002DE5D /* Data */,
 				7453F61F281731230002DE5D /* Model */,
 				7453F6202817312B0002DE5D /* ViewModel */,
