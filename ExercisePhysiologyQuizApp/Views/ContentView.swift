@@ -8,12 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var model: ContentViewModel
+    
+    
     var body: some View {
         NavigationView{
-            VStack{
-                Text("Main screen of different quiz options")
+           ScrollView {
+                LazyVStack{
+                ForEach(model.quizModules) {
+                    quiz in
+                    
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.indigo)
+                            .aspectRatio(CGSize(width: 200, height: 250), contentMode: .fit)
+                            .shadow(radius: 10)
+                    }
+                    
+//                    Text(quiz.category)
+//
+////                    Image("\(quiz.course.image)")
+//
+//                    Text(quiz.course.description)
+                }//ForEach Loop
+                .padding()
+               
+                   
+                }//LazyVStack
+                .navigationTitle("Quizzes")
             }
-            .navigationTitle("Quizzes")
         }
     }
 }
@@ -21,5 +45,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ContentViewModel())
     }
 }
