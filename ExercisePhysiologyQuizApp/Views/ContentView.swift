@@ -19,25 +19,43 @@ struct ContentView: View {
                 ForEach(model.quizModules) {
                     quiz in
                     
-                    ZStack{
+                    ZStack(alignment: .leading){
                         RoundedRectangle(cornerRadius: 20)
                             .fill(Color.indigo)
                             .aspectRatio(CGSize(width: 200, height: 250), contentMode: .fit)
                             .shadow(radius: 10)
+                        
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(quiz.category)
+                                .font(.title)
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                          
+                            
+                            Text(quiz.course.description)
+                                .font(.headline)
+                           Spacer()
+                            
+                            Image("\(quiz.course.image)")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(minWidth: 200, maxWidth: .infinity, minHeight: 200, maxHeight: 300)
+                                Spacer()
+                            
+                        }//Vstack
+                        .padding()
+                      
+                        
+                        
                     }
-                    
-//                    Text(quiz.category)
-//
-////                    Image("\(quiz.course.image)")
-//
-//                    Text(quiz.course.description)
                 }//ForEach Loop
-                .padding()
+               
                
                    
                 }//LazyVStack
                 .navigationTitle("Quizzes")
-            }
+                .padding()
+            }//ScrollView
         }
     }
 }
