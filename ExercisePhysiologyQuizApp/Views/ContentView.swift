@@ -21,10 +21,7 @@ struct ContentView: View {
                 ForEach(model.quizModules) {
                     quiz in
                     
-                    NavigationLink(destination: QuizView()
-                        .onAppear(perform: {
-                            print(model.currentCourseSelected)
-                        }),
+                    NavigationLink(destination: QuizView(),
                                    tag: quiz.id,
                                    selection: $model.currentCourseSelected)
                     {

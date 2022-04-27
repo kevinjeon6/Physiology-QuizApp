@@ -16,7 +16,7 @@ struct CourseCard: View {
     var body: some View {
         
         
-        ZStack(alignment: .leading){
+        ZStack(){
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.indigo)
                 .aspectRatio(CGSize(width: 200, height: 250), contentMode: .fit)
@@ -31,6 +31,8 @@ struct CourseCard: View {
                 
                 Text(description)
                     .font(.headline)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.leading)
                Spacer()
                 
                 Image(image)
