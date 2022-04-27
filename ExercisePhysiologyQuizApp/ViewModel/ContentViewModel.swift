@@ -11,6 +11,9 @@ class ContentViewModel: ObservableObject {
     
     @Published var quizModules = [Quiz]()
     
+    //Current selected Test. Since we have EnvironmentObject, we can use this property to capture the selction in NavigationLink
+    @Published var currentCourseSelected: Int?
+    
 
     
     init(){

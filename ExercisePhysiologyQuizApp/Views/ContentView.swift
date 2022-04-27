@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @EnvironmentObject var model: ContentViewModel
     
+
+    
     
     var body: some View {
         NavigationView{
@@ -19,8 +21,21 @@ struct ContentView: View {
                 ForEach(model.quizModules) {
                     quiz in
                     
-                    CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
+                    NavigationLink(destination: QuizView()
+                        .onAppear(perform: {
+                            print(model.currentCourseSelected)
+                        }),
+                                   tag: quiz.id,
+                                   selection: $model.currentCourseSelected)
+                    {
+                        CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
+                    }
                     
+                    
+                       
+                        
+                    
+                   
                 
                 }//ForEach Loop
                
