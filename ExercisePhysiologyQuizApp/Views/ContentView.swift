@@ -31,22 +31,13 @@ struct ContentView: View {
                     {
                         CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
                     }
-                    
-                    
-                       
-                        
-                    
-                   
-                
                 }//ForEach Loop
-               
-               
-                   
                 }//LazyVStack
                 .navigationTitle("Quizzes")
                 .padding()
             }//ScrollView
-        }
+        }//NavigationView
+        .accentColor(.white)
     }
 }
 

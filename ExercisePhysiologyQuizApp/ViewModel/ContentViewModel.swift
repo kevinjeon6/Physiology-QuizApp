@@ -80,6 +80,19 @@ class ContentViewModel: ObservableObject {
     }
     
     
+    func nextQuestion(){
+        
+        currentQuestionIndex += 1
+        
+        if currentQuestionIndex < currentQuiz!.course.test.questions.count {
+            currentQuestion = currentQuiz!.course.test.questions[currentQuestionIndex]
+            
+        } else {
+            currentQuestion = nil
+            currentQuestionIndex = 0
+        }
+    }
+    
 
     
 }

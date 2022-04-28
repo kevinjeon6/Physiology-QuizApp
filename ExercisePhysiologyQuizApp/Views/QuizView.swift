@@ -16,18 +16,38 @@ struct QuizView: View {
         
         if model.currentQuestion != nil {
             
-            ZStack{
-                Color.blue
+            ZStack(){
+                Color.indigo
+                    .ignoresSafeArea()
                 
                 VStack(spacing: 20){
+                  
                     Text("\(model.currentQuestionIndex + 1) of \(model.currentQuiz?.course.test.questions.count ?? 0) question")
+                    
+
+                    
+                    Text("\(model.currentQuestion?.content ?? "" )")
+                    
+                    ScrollView{
+                        ForEach(0..<model.currentQuestion!.answers.count, id: \.self) {
+                            index in
+                            
+                            Text(model.currentQuestion?.answers[index] ?? "")
+                        }
+                    }
                     
                 
                  
                     
                 }//VStack
-                .navigationTitle("\(model.currentQuiz?.category ?? "") Quiz")
+//                .navigationTitle("\(model.currentQuiz?.category ?? "") Quiz")
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text("\(model.currentQuiz?.category ?? "" )")
+                            .foregroundColor(.white).fontWeight(.bold)
+                    }
+                }
             }//ZStack
             
         } else {
@@ -40,6 +60,6 @@ struct QuizView: View {
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         QuizView()
-            .environmentObject(ContentViewModel())
+           
     }
 }
