@@ -8,13 +8,38 @@
 import SwiftUI
 
 struct QuizView: View {
+    
+    @EnvironmentObject var model: ContentViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      
+        
+        if model.currentQuestion != nil {
+            
+            ZStack{
+                Color.blue
+                
+                VStack(spacing: 20){
+                    Text("\(model.currentQuestionIndex + 1) of \(model.currentQuiz?.course.test.questions.count ?? 0) question")
+                    
+                
+                 
+                    
+                }//VStack
+                .navigationTitle("\(model.currentQuiz?.category ?? "") Quiz")
+                .navigationBarTitleDisplayMode(.inline)
+            }//ZStack
+            
+        } else {
+            ProgressView()
+        }
+        
     }
 }
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         QuizView()
+            .environmentObject(ContentViewModel())
     }
 }
