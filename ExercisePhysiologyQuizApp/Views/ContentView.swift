@@ -21,9 +21,13 @@ struct ContentView: View {
                 ForEach(model.quizModules) {
                     quiz in
                     
-                    NavigationLink(destination: QuizView(),
-                                   tag: quiz.id,
-                                   selection: $model.currentCourseSelected)
+                    NavigationLink(destination: QuizView()
+                        .onAppear(perform: {
+                            model.beginQuizModule(quiz.course.test.id)
+                        }),
+                                   tag:quiz.id,
+//                                    quiz.course.test.id,
+                                   selection: $model.currentCourseTestSelected)
                     {
                         CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
                     }
