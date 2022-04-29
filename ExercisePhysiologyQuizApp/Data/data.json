@@ -44,8 +44,8 @@
                     },
                     {
                         "id": 3,
-                        "content": "What protein is the principal component of skeletal muscle thick filaments?",
-                        "correctIndex": 1,
+                        "content": "What protein is the principal component of skeletal muscle thin filaments?",
+                        "correctIndex": 0,
                         "answers": [
                             "Actin",
                             "Myosin",
