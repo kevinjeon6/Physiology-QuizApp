@@ -15,6 +15,20 @@ struct QuizView: View {
     @State private var numberCorrect = 0
     @State private var isSubmitted = false
     
+    var buttonText: String {
+        if isSubmitted == true {
+            
+            if model.currentQuestionIndex + 1 == model.currentQuiz!.course.test.questions.count {
+                return "Finish"
+            } else {
+                return "Next Question"
+            }
+            
+        } else {
+            return "Submit"
+        }
+    }
+    
     var body: some View {
         
         if model.currentQuestion != nil {
@@ -36,12 +50,40 @@ struct QuizView: View {
                             
                             Button {
                                 selectedAnswer = index
+                                
+                                
                             } label: {
                                 ZStack {
-                                    Capsule()
-                                        .strokeBorder(Color.purple, lineWidth: 4)
-                                        .background(selectedAnswer == index ? .gray : .white)
-                                        .cornerRadius(20)
+                                    
+                                    if isSubmitted == false {
+                                        Capsule()
+                                            .strokeBorder(Color.purple, lineWidth: 4)
+                                            .background(selectedAnswer == index ? .gray : .white)
+                                            .cornerRadius(20)
+                                    } else {
+                                        if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
+                                            Capsule()
+                                                .strokeBorder(Color.purple, lineWidth: 4)
+                                                .background(Color.green)
+                                                .cornerRadius(20)
+                                        } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
+                                            Capsule()
+                                                .strokeBorder(Color.purple, lineWidth: 4)
+                                                .background(Color.red)
+                                                .cornerRadius(20)
+                                        }  else if index == model.currentQuestion!.correctIndex {
+                                            Capsule()
+                                                .strokeBorder(Color.purple, lineWidth: 4)
+                                                .background(Color.green)
+                                                .cornerRadius(20)
+                                        } else {
+                                            Capsule()
+                                                .strokeBorder(Color.purple, lineWidth: 4)
+                                                .background(Color.white)
+                                                .cornerRadius(20)
+                                        }
+
+                                    }
                                     
                                     Text("\(model.currentQuestion?.answers[index] ?? "")")
                                         .padding()
@@ -61,11 +103,24 @@ struct QuizView: View {
                 
                 //Submit/Next/Finish Button
                 Button {
-                    isSubmitted.toggle()
                     
-                    if selectedAnswer == model.currentQuestion!.correctIndex {
-                        numberCorrect += 1
+                    if isSubmitted == true {
+                        model.nextQuestion()
+                        //Resent properties
+                        isSubmitted = false
+                        selectedAnswer = nil
+                        } else {
+                            
+                            isSubmitted.toggle()
+                            
+                            if selectedAnswer == model.currentQuestion!.correctIndex {
+                                numberCorrect += 1
+                        }
+                        
                     }
+                  
+                   
+                    
                 } label: {
                     ZStack {
                         Capsule()
@@ -74,7 +129,7 @@ struct QuizView: View {
                             .frame(height: 50)
                      
                         
-                        Text("Submit")
+                        Text(buttonText)
                             .padding()
                             .foregroundColor(.white)
                     }
