@@ -142,7 +142,8 @@ struct QuizView: View {
             .navigationBarTitle("\(model.currentQuiz?.category ?? "")")
             .padding(.horizontal, 20)
         } else {
-            ProgressView()
+            ResultsView(numberCorrect: numberCorrect)
+//            ProgressView()
         }
         
         
