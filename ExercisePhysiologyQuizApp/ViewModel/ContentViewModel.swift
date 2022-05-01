@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 class ContentViewModel: ObservableObject {
     
@@ -27,7 +28,7 @@ class ContentViewModel: ObservableObject {
 
     
     init(){
-        getLocalData()
+//        getLocalData()
     }
     
     
@@ -35,28 +36,28 @@ class ContentViewModel: ObservableObject {
     
     //MARK: - Get Local data
     
-    func getLocalData() {
-        //Create a URL
-        
-        let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
-        
-  
-        
-        do {
-            //Read the file into a data object
-            let jsonData = try Data(contentsOf: jsonUrl!)
-            let jsonDecoder = JSONDecoder()
-            
-           let quizModules = try jsonDecoder.decode([Quiz].self, from: jsonData)
-  
-        
-            //Assign parsed modules to quizModules property
-            self.quizModules = quizModules
-        } catch {
-            print("Couldn't parse local data")
-        }
-       
-    }
+//    func getLocalData() {
+//        //Create a URL
+//
+//        let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
+//
+//
+//
+//        do {
+//            //Read the file into a data object
+//            let jsonData = try Data(contentsOf: jsonUrl!)
+//            let jsonDecoder = JSONDecoder()
+//
+//           let quizModules = try jsonDecoder.decode([Quiz].self, from: jsonData)
+//
+//
+//            //Assign parsed modules to quizModules property
+//            pushToFirebase(quizmodules: quizModules)
+//        } catch {
+//            print("Couldn't parse local data")
+//        }
+//
+//    }
     
     
     func beginQuizModule(_ moduleid: Int){
@@ -93,6 +94,55 @@ class ContentViewModel: ObservableObject {
         }
     }
     
+    
+    //MARK: - Firebase Methods
 
+    
+    
+    func pushToFirebase(quizmodules: [Quiz]){
+        let db = Firestore.firestore()
+        
+        let firebaseModules = db.collection("quizmodules")
+        
+        for quiz in quizmodules {
+            let course = quiz.course
+            let test = quiz.course.test
+            
+            let firebaseModule = firebaseModules.addDocument(data: ["category": quiz.category])
+            
+            firebaseModule.updateData(["id": firebaseModule.documentID,
+                                       "course": ["id": firebaseModule.documentID,
+                                        "image": course.image,
+                                                  "description": course.description,
+                                                  
+                                        ],
+                                       "test": [
+                                        "id": firebaseModule.documentID,
+                                        "questions": test.questions.count
+                                       ]
+                                      ])
+            
+            
+            
+            
+            for question in test.questions {
+                let firebaseQuestion = firebaseModule.collection("questions").addDocument(data: ["content": question.content,
+                                                                                                 "correctIndex": question.correctIndex,
+                                                                                                 "answers": question.answers
+                                                                                                 
+                ])
+                
+                firebaseQuestion.updateData(["id": firebaseQuestion.documentID])
+            }
+            
+        }
+    }
+    
+
+    func getFirebaseQuestions(modeule: Quiz){
+        let db = Firestore.firestore()
+        
+        let firebaseModules = db.collection("quizmodules").document("questions")
+    }
     
 }
