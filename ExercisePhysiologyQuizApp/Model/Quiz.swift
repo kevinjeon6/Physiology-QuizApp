@@ -10,28 +10,28 @@ import Foundation
 
 struct Quiz: Decodable, Identifiable {
     
-    var id: Int
-    var category: String
-    var course: Course
+    var id: String = ""
+    var category: String = ""
+    var course: Course = Course()
 }
 
 
 struct Course: Decodable, Identifiable {
-    var id: Int
-    var image: String
-    var description: String
-    var test: Test
+    var id: String = ""
+    var image: String = ""
+    var description: String = ""
+    var test: Test = Test()
 }
 
 
 struct Test: Decodable, Identifiable {
-    var id: Int
-    var questions: [Questions]
+    var id: String = ""
+    var questions: [Questions] = [Questions]()
 }
 
 struct Questions: Decodable, Identifiable {
-    var id: Int
-    var content: String
-    var correctIndex: Int
-    var answers: [String]
+    var id: String = ""
+    var content: String = ""
+    var correctIndex: Int = 0
+    var answers: [String] = [String]()
 }
