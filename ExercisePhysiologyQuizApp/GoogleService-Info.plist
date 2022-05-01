@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>814548650811-uuelsif49nk7cmg4v867ub69ffmceoka.apps.googleusercontent.com</string>
+	<string>677007337698-jqj86mrq5mo92q85f1312mbuaqlbbjco.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.814548650811-uuelsif49nk7cmg4v867ub69ffmceoka</string>
+	<string>com.googleusercontent.apps.677007337698-jqj86mrq5mo92q85f1312mbuaqlbbjco</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBxmlacX4UKVO5zc2lui6yDP2YZcm_Z3g0</string>
+	<string>AIzaSyDEKLL7SIRjKCYMKOQkIAGVsKn1V0d5s9Q</string>
 	<key>GCM_SENDER_ID</key>
-	<string>814548650811</string>
+	<string>677007337698</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.kevinjeon.ExercisePhysiologyQuizApp</string>
 	<key>PROJECT_ID</key>
-	<string>exercise-phys-quizapp</string>
+	<string>exphys-quizzie</string>
 	<key>STORAGE_BUCKET</key>
-	<string>exercise-phys-quizapp.appspot.com</string>
+	<string>exphys-quizzie.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:814548650811:ios:4c4055332b9db22e82051e</string>
+	<string>1:677007337698:ios:e5d2e98624cf146d2316bb</string>
 </dict>
 </plist>

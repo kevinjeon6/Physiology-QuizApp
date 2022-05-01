@@ -7,27 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7422E0B12814434000A0C53F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7422E0B02814434000A0C53F /* GoogleService-Info.plist */; };
 		7453581C2818851000843932 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453581B2818850F00843932 /* CourseCard.swift */; };
 		7453F625281734C70002DE5D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453F624281734C60002DE5D /* Quiz.swift */; };
 		7453F627281736F20002DE5D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453F626281736F20002DE5D /* ContentViewModel.swift */; };
 		74616672281846CC00ADAA17 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CB3F9B28178A2700D1BE00 /* data.json */; };
+		7476C5CE281F3C8300E795A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7476C5CD281F3C8300E795A2 /* GoogleService-Info.plist */; };
 		74CC64A32819D684007E846A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC64A22819D684007E846A /* QuizView.swift */; };
 		74DF7318281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */; };
 		74DF731A281349810096DFA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7319281349810096DFA2 /* ContentView.swift */; };
 		74DF731C281349890096DFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DF731B281349890096DFA2 /* Assets.xcassets */; };
 		74DF731F281349890096DFA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DF731E281349890096DFA2 /* Preview Assets.xcassets */; };
 		74ECAEDA281C82BF0046F30A /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAED9281C82BE0046F30A /* ResultsView.swift */; };
+		74ECAEDD281F0C530046F30A /* AwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAEDC281F0C530046F30A /* AwesomeView.swift */; };
+		74ECAEDF281F0CC80046F30A /* AverageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAEDE281F0CC80046F30A /* AverageView.swift */; };
+		74ECAEE1281F0D130046F30A /* PoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAEE0281F0D130046F30A /* PoorView.swift */; };
 		E541FA1A93CF006EF87AE630 /* Pods_ExercisePhysiologyQuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54D1AB716812B99A0E0557CF /* Pods-ExercisePhysiologyQuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExercisePhysiologyQuizApp.debug.xcconfig"; path = "Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExercisePhysiologyQuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7422E0B02814434000A0C53F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7453581B2818850F00843932 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
 		7453F624281734C60002DE5D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		7453F626281736F20002DE5D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7476C5CD281F3C8300E795A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74CB3F9B28178A2700D1BE00 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		74CC64A22819D684007E846A /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		74DF7314281349800096DFA2 /* ExercisePhysiologyQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExercisePhysiologyQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +39,9 @@
 		74DF731B281349890096DFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DF731E281349890096DFA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74ECAED9281C82BE0046F30A /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		74ECAEDC281F0C530046F30A /* AwesomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeView.swift; sourceTree = "<group>"; };
+		74ECAEDE281F0CC80046F30A /* AverageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageView.swift; sourceTree = "<group>"; };
+		74ECAEE0281F0D130046F30A /* PoorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoorView.swift; sourceTree = "<group>"; };
 		E9A607ECF684470C2755F9C4 /* Pods-ExercisePhysiologyQuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExercisePhysiologyQuizApp.release.xcconfig"; path = "Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +62,7 @@
 			children = (
 				74DF7319281349810096DFA2 /* ContentView.swift */,
 				74CC64A22819D684007E846A /* QuizView.swift */,
-				74ECAED9281C82BE0046F30A /* ResultsView.swift */,
+				74ECAEDB281F0C080046F30A /* Feedback */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,8 +126,8 @@
 				7453F61F281731230002DE5D /* Model */,
 				7453F6202817312B0002DE5D /* ViewModel */,
 				7422E0B22814453700A0C53F /* Views */,
-				7422E0B02814434000A0C53F /* GoogleService-Info.plist */,
 				74DF731B281349890096DFA2 /* Assets.xcassets */,
+				7476C5CD281F3C8300E795A2 /* GoogleService-Info.plist */,
 				74DF731D281349890096DFA2 /* Preview Content */,
 			);
 			path = ExercisePhysiologyQuizApp;
@@ -133,6 +139,17 @@
 				74DF731E281349890096DFA2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74ECAEDB281F0C080046F30A /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				74ECAED9281C82BE0046F30A /* ResultsView.swift */,
+				74ECAEDC281F0C530046F30A /* AwesomeView.swift */,
+				74ECAEDE281F0CC80046F30A /* AverageView.swift */,
+				74ECAEE0281F0D130046F30A /* PoorView.swift */,
+			);
+			path = Feedback;
 			sourceTree = "<group>";
 		};
 		858FCB25425C418F1B26AC91 /* Frameworks */ = {
@@ -213,8 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				74DF731F281349890096DFA2 /* Preview Assets.xcassets in Resources */,
+				7476C5CE281F3C8300E795A2 /* GoogleService-Info.plist in Resources */,
 				74DF731C281349890096DFA2 /* Assets.xcassets in Resources */,
-				7422E0B12814434000A0C53F /* GoogleService-Info.plist in Resources */,
 				74616672281846CC00ADAA17 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74ECAEE1281F0D130046F30A /* PoorView.swift in Sources */,
+				74ECAEDF281F0CC80046F30A /* AverageView.swift in Sources */,
+				74ECAEDD281F0C530046F30A /* AwesomeView.swift in Sources */,
 				7453F627281736F20002DE5D /* ContentViewModel.swift in Sources */,
 				74DF731A281349810096DFA2 /* ContentView.swift in Sources */,
 				74DF7318281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift in Sources */,
@@ -410,6 +430,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +461,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
