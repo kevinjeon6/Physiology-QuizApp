@@ -29,6 +29,8 @@ class ContentViewModel: ObservableObject {
     
     init(){
 //        getLocalData()
+        
+        getDatabaseModules()
     }
     
     
@@ -60,7 +62,7 @@ class ContentViewModel: ObservableObject {
 //    }
     
     
-    func beginQuizModule(_ moduleid: Int){
+    func beginQuizModule(_ moduleid: String){
         
        
         //Need to loop through Quiz array
@@ -138,11 +140,80 @@ class ContentViewModel: ObservableObject {
         }
     }
     
-
-    func getFirebaseQuestions(modeule: Quiz){
+    
+    func getDatabaseModules(){
+        
         let db = Firestore.firestore()
         
-        let firebaseModules = db.collection("quizmodules").document("questions")
+        let collection = db.collection("quizmodules")
+        
+        collection.getDocuments {
+            snapshot, error in
+            
+            if error == nil && snapshot != nil {
+                var qmodules = [Quiz]()
+                
+                for doc in snapshot!.documents {
+                    
+                    var qm = Quiz()
+                    
+                    qm.id = doc["id"] as? String ?? UUID().uuidString
+                    qm.category = doc["category"] as? String ?? ""
+                
+                    
+                    let contentMap = doc["course"] as! [String:Any]
+                    
+                    qm.course.id = contentMap["id"] as? String ?? ""
+                    qm.course.image = contentMap["image"] as? String ?? ""
+                    qm.course.description = contentMap["description"] as? String ?? ""
+                    
+                    
+                    let quizMap = doc["test"] as! [String:Any]
+                    
+                    qm.course.test.id = quizMap["id"] as? String ?? ""
+                 
+                    qmodules.append(qm)
+                    
+                }
+                
+                DispatchQueue.main.async {
+                    self.quizModules = qmodules
+                }
+            }
+        }
+    }
+    
+
+    func getFirebaseQuestions(module: Quiz, completion: @escaping () -> Void){
+        let db = Firestore.firestore()
+        
+        let firebaseModules = db.collection("quizmodules").document(module.id).collection("questions")
+        
+       firebaseModules.getDocuments{ snapshot, error in
+            if error == nil && snapshot != nil {
+                var questions = [Questions]()
+                
+                for doc in snapshot!.documents {
+                    var q = Questions()
+                    
+                    q.id = doc["id"] as? String ?? UUID().uuidString
+                    q.content = doc["content"] as? String ?? ""
+                    q.correctIndex = doc["correctIndex"] as? Int ?? 0
+                    q.answers = doc["answers"] as? [String] ?? [String]()
+                    
+                    questions.append(q)
+                }
+                
+                for (index, m) in self.quizModules.enumerated(){
+                    if m.id == module.id {
+                        self.quizModules[index].course.test.questions = questions
+                        
+                        completion()
+                    }
+                }
+                
+            }
+        }
     }
     
 }

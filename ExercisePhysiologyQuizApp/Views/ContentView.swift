@@ -23,9 +23,12 @@ struct ContentView: View {
                     
                     NavigationLink(destination: QuizView()
                         .onAppear(perform: {
-                            model.beginQuizModule(quiz.course.test.id)
+                            model.getFirebaseQuestions(module: quiz) {
+                                model.beginQuizModule(quiz.course.test.id)
+                            }
+                          
                         }),
-                                   tag:quiz.id,
+                                   tag:quiz.id.hash,
 //                                    quiz.course.test.id,
                                    selection: $model.currentCourseTestSelected)
                     {
