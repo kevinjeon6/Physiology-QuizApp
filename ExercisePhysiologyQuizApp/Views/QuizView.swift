@@ -23,94 +23,105 @@ struct QuizView: View {
             } else {
                 return "Next Question"
             }
-            
         } else {
             return "Submit"
         }
     }
     
     var body: some View {
-        
         if model.currentQuestion != nil {
             
             VStack(alignment: .leading) {
+                
                 Text("\(model.currentQuestionIndex + 1) of \(model.currentQuiz?.course.test.questions.count ?? 0)")
                     .padding(.bottom, 10)
                 
-                
+               Spacer()
                 
                 Text("\(model.currentQuestion?.content ?? "")")
                 
+            
+           
                
                 //Answers
-                ScrollView {
+                
+             Spacer()
+                   
                     VStack {
-                        ForEach(0..<model.currentQuestion!.answers.count, id: \.self){
-                            index in
-                            
-                            Button {
-                                selectedAnswer = index
+                          
+                            ForEach(0..<model.currentQuestion!.answers.count, id: \.self){
+                                index in
                                 
-                                
-                            } label: {
-                                ZStack {
+                                Button {
+                                    selectedAnswer = index
                                     
-                                    if isSubmitted == false {
-                                        Capsule()
-                                            .strokeBorder(Color.purple, lineWidth: 4)
-                                            .background(
-                                                Capsule()
-                                                    .fill(selectedAnswer == index ? .gray : .white))
-                                            .cornerRadius(20)
-                                    } else {
-                                        if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
+                                    
+                                } label: {
+                                    ZStack {
+                                        
+                                        if isSubmitted == false {
                                             Capsule()
                                                 .strokeBorder(Color.purple, lineWidth: 4)
                                                 .background(
                                                     Capsule()
-                                                        .fill(.green)
-                                                )
+                                                        .fill(selectedAnswer == index ? .gray : .white))
                                                 .cornerRadius(20)
-                                        } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
-                                            Capsule()
-                                                .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(
-                                                    Capsule()
-                                                        .fill(.red))
-                                                .cornerRadius(20)
-                                        }  else if index == model.currentQuestion!.correctIndex {
-                                            Capsule()
-                                                .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(
-                                                    Capsule()
-                                                        .fill(.green))
-                                                .cornerRadius(20)
+                                                .frame(height: 50)
                                         } else {
-                                            Capsule()
-                                                .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(
-                                                    Capsule()
-                                                        .fill(.white))
-                                                .cornerRadius(20)
-                                        }
+                                            if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
+                                                Capsule()
+                                                    .strokeBorder(Color.purple, lineWidth: 4)
+                                                    .background(
+                                                        Capsule()
+                                                            .fill(.green)
+                                                    )
+                                                    .cornerRadius(20)
+                                                    .frame(height: 50)
+                                            } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
+                                                Capsule()
+                                                    .strokeBorder(Color.purple, lineWidth: 4)
+                                                    .background(
+                                                        Capsule()
+                                                            .fill(.red))
+                                                    .cornerRadius(20)
+                                                    .frame(height: 50)
+                                            }  else if index == model.currentQuestion!.correctIndex {
+                                                Capsule()
+                                                    .strokeBorder(Color.purple, lineWidth: 4)
+                                                    .background(
+                                                        Capsule()
+                                                            .fill(.green))
+                                                    .cornerRadius(20)
+                                                    .frame(height: 50)
+                                            } else {
+                                                Capsule()
+                                                    .strokeBorder(Color.purple, lineWidth: 4)
+                                                    .background(
+                                                        Capsule()
+                                                            .fill(.white))
+                                                    .cornerRadius(20)
+                                                    .frame(height: 50)
+                                            }
 
+                                        }
+                                        
+                                        Text("\(model.currentQuestion?.answers[index] ?? "")")
+                                            .padding()
+                                            .foregroundColor(.black)
                                     }
-                                    
-                                    Text("\(model.currentQuestion?.answers[index] ?? "")")
-                                        .padding()
-                                        .foregroundColor(.black)
                                 }
-                            }
-                            .disabled(isSubmitted)
-                           
-                            
-                            
-                        }//ForEach
+                                .disabled(isSubmitted)
+                               
+                                
+                                
+                            }//ForEach
                     }//Vstack
-                }//ScrollView
+                    .padding(.bottom, 20)
+               
                 
                 
                 
+               
                 
                 //Submit/Next/Finish Button
                 Button {
@@ -146,6 +157,7 @@ struct QuizView: View {
                     }
                 }
                 .disabled(selectedAnswer == nil)
+                .padding(.bottom, 10)
               
                 
                 
