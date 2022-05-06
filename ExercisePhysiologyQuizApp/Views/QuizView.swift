@@ -58,28 +58,39 @@ struct QuizView: View {
                                     if isSubmitted == false {
                                         Capsule()
                                             .strokeBorder(Color.purple, lineWidth: 4)
-                                            .background(selectedAnswer == index ? .gray : .white)
+                                            .background(
+                                                Capsule()
+                                                    .fill(selectedAnswer == index ? .gray : .white))
                                             .cornerRadius(20)
                                     } else {
                                         if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
                                             Capsule()
                                                 .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(Color.green)
+                                                .background(
+                                                    Capsule()
+                                                        .fill(.green)
+                                                )
                                                 .cornerRadius(20)
                                         } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
                                             Capsule()
                                                 .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(Color.red)
+                                                .background(
+                                                    Capsule()
+                                                        .fill(.red))
                                                 .cornerRadius(20)
                                         }  else if index == model.currentQuestion!.correctIndex {
                                             Capsule()
                                                 .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(Color.green)
+                                                .background(
+                                                    Capsule()
+                                                        .fill(.green))
                                                 .cornerRadius(20)
                                         } else {
                                             Capsule()
                                                 .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(Color.white)
+                                                .background(
+                                                    Capsule()
+                                                        .fill(.white))
                                                 .cornerRadius(20)
                                         }
 
