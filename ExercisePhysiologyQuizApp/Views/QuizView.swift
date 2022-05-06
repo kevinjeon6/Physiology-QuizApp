@@ -65,8 +65,7 @@ struct QuizView: View {
                                                 .background(
                                                     Capsule()
                                                         .fill(selectedAnswer == index ? .gray : .white))
-                                                .cornerRadius(20)
-                                                .frame(height: 50)
+                                                .modifier(ButtonModifier())
                                         } else {
                                             if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
                                                 Capsule()
@@ -75,32 +74,28 @@ struct QuizView: View {
                                                         Capsule()
                                                             .fill(.green)
                                                     )
-                                                    .cornerRadius(20)
-                                                    .frame(height: 50)
+                                                    .modifier(ButtonModifier())
                                             } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
                                                 Capsule()
                                                     .strokeBorder(Color.purple, lineWidth: 4)
                                                     .background(
                                                         Capsule()
                                                             .fill(.red))
-                                                    .cornerRadius(20)
-                                                    .frame(height: 50)
+                                                    .modifier(ButtonModifier())
                                             }  else if index == model.currentQuestion!.correctIndex {
                                                 Capsule()
                                                     .strokeBorder(Color.purple, lineWidth: 4)
                                                     .background(
                                                         Capsule()
                                                             .fill(.green))
-                                                    .cornerRadius(20)
-                                                    .frame(height: 50)
+                                                    .modifier(ButtonModifier())
                                             } else {
                                                 Capsule()
                                                     .strokeBorder(Color.purple, lineWidth: 4)
                                                     .background(
                                                         Capsule()
                                                             .fill(.white))
-                                                    .cornerRadius(20)
-                                                    .frame(height: 50)
+                                                    .modifier(ButtonModifier())
                                             }
 
                                         }
