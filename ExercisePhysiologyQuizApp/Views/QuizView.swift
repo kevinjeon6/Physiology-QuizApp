@@ -14,6 +14,7 @@ struct QuizView: View {
     @State private var selectedAnswer: Int?
     @State private var numberCorrect = 0
     @State private var isSubmitted = false
+    @State var progressValue: Float = 0.10
     
     var buttonText: String {
         if isSubmitted == true {
@@ -28,6 +29,18 @@ struct QuizView: View {
         }
     }
     
+    
+    func progressIncrement(){
+        
+        if progressValue < 1.0 {
+            //1.0 represents 100%
+            self.progressValue += 0.10
+        } else {
+            progressValue = 0.0
+        }
+    }
+    
+    
     var body: some View {
         if model.currentQuestion != nil {
             
@@ -35,6 +48,9 @@ struct QuizView: View {
                 
                 Text("\(model.currentQuestionIndex + 1) of \(model.currentQuiz?.course.test.questions.count ?? 0)")
                     .padding(.bottom, 10)
+                
+                ProgressionBar(progressAmount: $progressValue)
+                    .frame(height: 20)
                 
                Spacer()
                 
@@ -122,6 +138,7 @@ struct QuizView: View {
                     
                     if isSubmitted == true {
                         model.nextQuestion()
+                        progressIncrement()
                         //Resent properties
                         isSubmitted = false
                         selectedAnswer = nil

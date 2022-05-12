@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7405B168282D5E6A005736D9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405B167282D5E6A005736D9 /* WelcomeView.swift */; };
+		7405B16A282D83B8005736D9 /* ProgressionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405B169282D83B8005736D9 /* ProgressionBar.swift */; };
 		7412B0E7282AF03300BE700E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412B0E6282AF03300BE700E /* InfoView.swift */; };
 		7453581C2818851000843932 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453581B2818850F00843932 /* CourseCard.swift */; };
 		7453F625281734C70002DE5D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453F624281734C60002DE5D /* Quiz.swift */; };
@@ -33,6 +34,7 @@
 		54D1AB716812B99A0E0557CF /* Pods-ExercisePhysiologyQuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExercisePhysiologyQuizApp.debug.xcconfig"; path = "Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExercisePhysiologyQuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7405B167282D5E6A005736D9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7405B169282D83B8005736D9 /* ProgressionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionBar.swift; sourceTree = "<group>"; };
 		7412B0E6282AF03300BE700E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		7453581B2818850F00843932 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
 		7453F624281734C60002DE5D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				7453581B2818850F00843932 /* CourseCard.swift */,
 				74B832C4282AFAE600BD6EB9 /* HeaderComponent.swift */,
+				7405B169282D83B8005736D9 /* ProgressionBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -149,8 +152,8 @@
 		74DF7316281349800096DFA2 /* ExercisePhysiologyQuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				74E5023B2825874D00464427 /* Extensions */,
 				74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */,
+				74E5023B2825874D00464427 /* Extensions */,
 				74E5023A28257EBE00464427 /* Modifiers */,
 				74616677281881E100ADAA17 /* Components */,
 				7453F621281731380002DE5D /* Data */,
@@ -345,6 +348,7 @@
 				7405B168282D5E6A005736D9 /* WelcomeView.swift in Sources */,
 				74ECAEDA281C82BF0046F30A /* ResultsView.swift in Sources */,
 				74E5023D2825879600464427 /* TextExtension.swift in Sources */,
+				7405B16A282D83B8005736D9 /* ProgressionBar.swift in Sources */,
 				7453581C2818851000843932 /* CourseCard.swift in Sources */,
 				74CC64A32819D684007E846A /* QuizView.swift in Sources */,
 			);
