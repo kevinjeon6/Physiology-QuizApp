@@ -13,6 +13,8 @@ struct CourseCard: View {
     var description: String
     var image: String
     
+    @State var showInfoSheet = false
+    
     var body: some View {
         
         
@@ -23,10 +25,23 @@ struct CourseCard: View {
                 .shadow(radius: 10)
             
             VStack(alignment: .leading, spacing: 10) {
-                Text(category)
-                    .font(.title)
-                    .foregroundColor(.white)
+                HStack {
+                    Text(category)
+                        .font(.title)
+                        .foregroundColor(.white)
                     .fontWeight(.bold)
+                    Spacer()
+                    Button {
+                        showInfoSheet.toggle()
+                    } label: {
+                        Image(systemName: "info.circle")
+                    }
+                    .accentColor(.white)
+                    .sheet(isPresented: $showInfoSheet) {
+                        InfoView()
+                    }
+
+                }//Hstack
               
                 
                 Text(description)
