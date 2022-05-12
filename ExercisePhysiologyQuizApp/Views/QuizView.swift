@@ -64,7 +64,7 @@ struct QuizView: View {
                                                 .strokeBorder(Color.purple, lineWidth: 4)
                                                 .background(
                                                     Capsule()
-                                                        .fill(selectedAnswer == index ? .gray : .white))
+                                                        .fill(selectedAnswer == index ? .gray : .blue))
                                                 .modifier(ButtonModifier())
                                         } else {
                                             if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
@@ -94,15 +94,14 @@ struct QuizView: View {
                                                     .strokeBorder(Color.purple, lineWidth: 4)
                                                     .background(
                                                         Capsule()
-                                                            .fill(.white))
+                                                            .fill(.blue))
                                                     .modifier(ButtonModifier())
                                             }
 
                                         }
                                         
                                         Text("\(model.currentQuestion?.answers[index] ?? "")")
-                                            .padding()
-                                            .foregroundColor(.black)
+                                            .ButtonTextStyle()
                                     }
                                 }
                                 .disabled(isSubmitted)
@@ -147,8 +146,7 @@ struct QuizView: View {
                      
                         
                         Text(buttonText)
-                            .padding()
-                            .foregroundColor(.white)
+                            .ButtonTextStyle()
                     }
                 }
                 .disabled(selectedAnswer == nil)
