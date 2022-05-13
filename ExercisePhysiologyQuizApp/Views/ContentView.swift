@@ -15,33 +15,45 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationView{
-           ScrollView {
-                LazyVStack{
-                ForEach(model.quizModules) {
-                    quiz in
-                    
-                    NavigationLink(destination: QuizView()
-                        .onAppear(perform: {
-                            model.getFirebaseQuestions(module: quiz) {
-                                model.beginQuizModule(quiz.course.test.id)
+       
+            ZStack {
+                Color.pink
+                    .ignoresSafeArea()
+                VStack(alignment: .leading) {
+                    Text("Select a Quiz of Your Choice!")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.leading, 20)
+                        .padding(.top, 40)
+                    ScrollView {
+                        LazyVStack{
+                        ForEach(model.quizModules) {
+                            quiz in
+                            
+                            NavigationLink(destination: QuizView()
+                                .onAppear(perform: {
+                                    model.getFirebaseQuestions(module: quiz) {
+                                        model.beginQuizModule(quiz.course.test.id)
+                                    }
+                                  
+                                }),
+                                           tag:quiz.id.hash,
+        //                                    quiz.course.test.id,
+                                           selection: $model.currentCourseTestSelected)
+                            {
+                                CourseCard(category: quiz.category, image: quiz.course.image)
                             }
-                          
-                        }),
-                                   tag:quiz.id.hash,
-//                                    quiz.course.test.id,
-                                   selection: $model.currentCourseTestSelected)
-                    {
-                        CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
+                            
+                        
+                        }//ForEach Loop
+                        }//LazyVStack
+                        .navigationBarHidden(true)
+    //                    .navigationBarTitle("Quizzes")
+                        .padding()
                     }
-                    
-                
-                }//ForEach Loop
-                }//LazyVStack
-                .navigationBarTitle("Quizzes")
-                .padding()
+                }
             }//ScrollView
-        }//NavigationView
+        //NavigationView
 //        .accentColor(.white)
     }
 }

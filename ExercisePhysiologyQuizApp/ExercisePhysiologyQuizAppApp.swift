@@ -17,7 +17,7 @@ struct ExercisePhysiologyQuizAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           WelcomeView()
                 .environmentObject(ContentViewModel())
         }
     }
