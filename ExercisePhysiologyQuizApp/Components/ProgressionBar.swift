@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProgressionBar: View {
     @Binding var progressAmount: Float
-    
+    var color: Color = Color.yellow
 
     
     var body: some View {
@@ -26,7 +26,7 @@ struct ProgressionBar: View {
                     Rectangle()
                         .frame(width:
                                 min(CGFloat(self.progressAmount) * geometry.size.width, geometry.size.width), height: geometry.size.height)
-                        .foregroundColor(.yellow)
+                        .foregroundColor(color)
                 }
                 
                 

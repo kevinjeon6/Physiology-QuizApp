@@ -10,7 +10,6 @@ import SwiftUI
 struct CourseCard: View {
     
     var category: String
-    var description: String
     var image: String
     
     @State var showInfoSheet = false
@@ -21,7 +20,7 @@ struct CourseCard: View {
         ZStack(){
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.indigo)
-                .aspectRatio(CGSize(width: 200, height: 250), contentMode: .fit)
+                .aspectRatio(CGSize(width: 200, height: 225), contentMode: .fit)
                 .shadow(radius: 10)
             
             VStack(alignment: .leading, spacing: 10) {
@@ -44,11 +43,6 @@ struct CourseCard: View {
                 }//Hstack
               
                 
-                Text(description)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.leading)
-               Spacer()
                 
                 Image(image)
                     .resizable()
@@ -67,6 +61,6 @@ struct CourseCard: View {
 
 struct CourseCard_Previews: PreviewProvider {
     static var previews: some View {
-        CourseCard(category: "Skeletal Muscle", description: "Muscle", image: "muscle")
+        CourseCard(category: "Skeletal Muscle", image: "muscle")
     }
 }
