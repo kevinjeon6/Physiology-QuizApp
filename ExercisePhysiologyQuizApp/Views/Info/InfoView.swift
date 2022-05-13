@@ -9,26 +9,30 @@ import SwiftUI
 
 struct InfoView: View {
     
+    var description: String
+    
     @Environment(\.dismiss) var dismiss
     
-    
+
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(spacing: 20) {
                 Spacer()
                 HeaderComponent()
-//
-                Text("Background")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
-                    .padding()
-                Text("The muscular system works with both the nervous system and the skeletal system to create movement of the human body. Skeletal muscle contracts and generates force. The contractino of skeletal muscle causes the bones to which they are attached to move, which creates the movement of body parts. The primary components of the muscular system are the individual muscle fibers (i.e, muscle cells)")
-                    .font(.system(size: 22, weight: .regular, design: .rounded))
-                    .foregroundColor(.primary)
-                    .padding(.bottom, 25)
-              
-          
+                
+             
+                    Text("Background")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
+                        .padding()
+                    
+                    
+                    Text(description)
+                        .font(.system(size: 22, weight: .regular, design: .rounded))
+                        .foregroundColor(.primary)
+                        .padding(.bottom, 25)
+     
              
                 Button {
                     dismiss()
@@ -52,6 +56,6 @@ struct InfoView: View {
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        InfoView(description: "Demo")
     }
 }

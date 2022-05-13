@@ -41,7 +41,7 @@ struct ContentView: View {
         //                                    quiz.course.test.id,
                                            selection: $model.currentCourseTestSelected)
                             {
-                                CourseCard(category: quiz.category, image: quiz.course.image)
+                                CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
                             }
                             
                         

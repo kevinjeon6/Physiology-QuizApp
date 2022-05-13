@@ -10,9 +10,13 @@ import SwiftUI
 struct CourseCard: View {
     
     var category: String
+    var description: String
     var image: String
     
     @State var showInfoSheet = false
+    
+
+  
     
     var body: some View {
         
@@ -30,15 +34,19 @@ struct CourseCard: View {
                         .foregroundColor(.white)
                     .fontWeight(.bold)
                     Spacer()
-                    Button {
-                        showInfoSheet.toggle()
-                    } label: {
-                        Image(systemName: "info.circle")
+                        Button {
+                            showInfoSheet.toggle()
+                        } label: {
+                            Image(systemName: "info.circle")
+                        }
+                        .accentColor(.white)
+                        .sheet(isPresented: $showInfoSheet) {
+                            InfoView(description: description)
+                        
                     }
-                    .accentColor(.white)
-                    .sheet(isPresented: $showInfoSheet) {
-                        InfoView()
-                    }
+                
+                        
+                   
 
                 }//Hstack
               
@@ -61,6 +69,6 @@ struct CourseCard: View {
 
 struct CourseCard_Previews: PreviewProvider {
     static var previews: some View {
-        CourseCard(category: "Skeletal Muscle", image: "muscle")
+        CourseCard(category: "Skeletal Muscle", description: "muscle",  image: "muscle")
     }
 }
