@@ -17,11 +17,12 @@ struct ContentView: View {
     var body: some View {
        
             ZStack {
-                Color.pink
+                Color.backgroundColor
                     .ignoresSafeArea()
                 VStack(alignment: .leading) {
                     Text("Select a Quiz of Your Choice!")
                         .font(.title2)
+                        .foregroundColor(.white)
                         .fontWeight(.bold)
                         .padding(.leading, 20)
                         .padding(.top, 40)

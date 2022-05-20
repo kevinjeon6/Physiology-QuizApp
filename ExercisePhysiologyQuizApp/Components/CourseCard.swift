@@ -23,7 +23,7 @@ struct CourseCard: View {
         
         ZStack(){
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.indigo)
+                .fill(Color.cardColor)
                 .aspectRatio(CGSize(width: 200, height: 225), contentMode: .fit)
                 .shadow(radius: 10)
             
@@ -31,7 +31,7 @@ struct CourseCard: View {
                 HStack {
                     Text(category)
                         .font(.title)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.tertiaryColor)
                     .fontWeight(.bold)
                     Spacer()
                         Button {
@@ -39,7 +39,7 @@ struct CourseCard: View {
                         } label: {
                             Image(systemName: "info.circle")
                         }
-                        .accentColor(.white)
+                        .accentColor(Color.tertiaryColor)
                         .sheet(isPresented: $showInfoSheet) {
                             InfoView(description: description)
                         
