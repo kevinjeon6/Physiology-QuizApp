@@ -15,6 +15,7 @@
 		7453F627281736F20002DE5D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453F626281736F20002DE5D /* ContentViewModel.swift */; };
 		74616672281846CC00ADAA17 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CB3F9B28178A2700D1BE00 /* data.json */; };
 		7476C5CE281F3C8300E795A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7476C5CD281F3C8300E795A2 /* GoogleService-Info.plist */; };
+		749C1D2D283816F300F4C1CA /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749C1D2C283816F300F4C1CA /* ColorExtension.swift */; };
 		74B832C5282AFAE600BD6EB9 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B832C4282AFAE600BD6EB9 /* HeaderComponent.swift */; };
 		74CC64A32819D684007E846A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC64A22819D684007E846A /* QuizView.swift */; };
 		74DF7318281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */; };
@@ -40,6 +41,7 @@
 		7453F624281734C60002DE5D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		7453F626281736F20002DE5D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7476C5CD281F3C8300E795A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		749C1D2C283816F300F4C1CA /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		74B832C4282AFAE600BD6EB9 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		74CB3F9B28178A2700D1BE00 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		74CC64A22819D684007E846A /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		749C1D2B283816DD00F4C1CA /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				749C1D2C283816F300F4C1CA /* ColorExtension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		74DF730B281349800096DFA2 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		74DF7316281349800096DFA2 /* ExercisePhysiologyQuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				749C1D2B283816DD00F4C1CA /* Colors */,
 				74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */,
 				74E5023B2825874D00464427 /* Extensions */,
 				74E5023A28257EBE00464427 /* Modifiers */,
@@ -351,6 +362,7 @@
 				7405B16A282D83B8005736D9 /* ProgressionBar.swift in Sources */,
 				7453581C2818851000843932 /* CourseCard.swift in Sources */,
 				74CC64A32819D684007E846A /* QuizView.swift in Sources */,
+				749C1D2D283816F300F4C1CA /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
