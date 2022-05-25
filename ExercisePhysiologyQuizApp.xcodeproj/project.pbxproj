@@ -162,8 +162,8 @@
 		74DF7316281349800096DFA2 /* ExercisePhysiologyQuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				749C1D2B283816DD00F4C1CA /* Colors */,
 				74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */,
+				749C1D2B283816DD00F4C1CA /* Colors */,
 				74E5023B2825874D00464427 /* Extensions */,
 				74E5023A28257EBE00464427 /* Modifiers */,
 				74616677281881E100ADAA17 /* Components */,
