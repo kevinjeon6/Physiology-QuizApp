@@ -14,6 +14,6 @@ extension Text {
             .font(.body)
             .fontWeight(.bold)
             .padding()
-            .foregroundColor(.white)
+            .foregroundColor(Color.tertiaryColor)
     }
 }

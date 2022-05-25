@@ -44,136 +44,139 @@ struct QuizView: View {
     var body: some View {
         if model.currentQuestion != nil {
             
-            VStack(alignment: .leading) {
+            ZStack {
+                Color.primaryColor
+                    .ignoresSafeArea()
+                VStack(alignment: .leading) {
+                    
+                    Text("\(model.currentQuestionIndex + 1) of \(model.currentQuiz?.course.test.questions.count ?? 0)")
+                        .foregroundColor(Color.secondaryColor)
+                        .padding(.bottom, 10)
+                    
+                    ProgressionBar(progressAmount: $progressValue)
+                        .frame(height: 20)
+                    
+                   Spacer()
+                    
+                    Text("\(model.currentQuestion?.content ?? "")")
+                        .foregroundColor(Color.secondaryColor)
+                    
                 
-                Text("\(model.currentQuestionIndex + 1) of \(model.currentQuiz?.course.test.questions.count ?? 0)")
-                    .padding(.bottom, 10)
-                
-                ProgressionBar(progressAmount: $progressValue)
-                    .frame(height: 20)
-                
-               Spacer()
-                
-                Text("\(model.currentQuestion?.content ?? "")")
-                
-            
-           
                
-                //Answers
-                
-             Spacer()
                    
-                    VStack {
-                          
-                            ForEach(0..<model.currentQuestion!.answers.count, id: \.self){
-                                index in
-                                
-                                Button {
-                                    selectedAnswer = index
+                    //Answers
+                    
+                 Spacer()
+                       
+                        VStack {
+                              
+                                ForEach(0..<model.currentQuestion!.answers.count, id: \.self){
+                                    index in
                                     
-                                    
-                                } label: {
-                                    ZStack {
+                                    Button {
+                                        selectedAnswer = index
                                         
-                                        if isSubmitted == false {
-                                            Capsule()
-                                                .strokeBorder(Color.purple, lineWidth: 4)
-                                                .background(
-                                                    Capsule()
-                                                        .fill(selectedAnswer == index ? .gray : .blue))
-                                                .modifier(ButtonModifier())
-                                        } else {
-                                            if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
+                                        
+                                    } label: {
+                                        ZStack {
+                                            
+                                            if isSubmitted == false {
                                                 Capsule()
-                                                    .strokeBorder(Color.purple, lineWidth: 4)
+                                                    .strokeBorder(Color.primaryColor, lineWidth: 4)
                                                     .background(
                                                         Capsule()
-                                                            .fill(.green)
-                                                    )
-                                                    .modifier(ButtonModifier())
-                                            } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
-                                                Capsule()
-                                                    .strokeBorder(Color.purple, lineWidth: 4)
-                                                    .background(
-                                                        Capsule()
-                                                            .fill(.red))
-                                                    .modifier(ButtonModifier())
-                                            }  else if index == model.currentQuestion!.correctIndex {
-                                                Capsule()
-                                                    .strokeBorder(Color.purple, lineWidth: 4)
-                                                    .background(
-                                                        Capsule()
-                                                            .fill(.green))
+                                                            .fill(selectedAnswer == index ? .yellow : Color.buttonColor))
                                                     .modifier(ButtonModifier())
                                             } else {
-                                                Capsule()
-                                                    .strokeBorder(Color.purple, lineWidth: 4)
-                                                    .background(
-                                                        Capsule()
-                                                            .fill(.blue))
-                                                    .modifier(ButtonModifier())
-                                            }
+                                                if index == selectedAnswer && index == model.currentQuestion!.correctIndex {
+                                                    Capsule()
+                                                        .strokeBorder(Color.primaryColor, lineWidth: 4)
+                                                        .background(
+                                                            Capsule()
+                                                                .fill(.green)
+                                                        )
+                                                        .modifier(ButtonModifier())
+                                                } else if index == selectedAnswer && index != model.currentQuestion!.correctIndex {
+                                                    Capsule()
+                                                        .strokeBorder(Color.primaryColor, lineWidth: 4)
+                                                        .background(
+                                                            Capsule()
+                                                                .fill(.red))
+                                                        .modifier(ButtonModifier())
+                                                }  else if index == model.currentQuestion!.correctIndex {
+                                                    Capsule()
+                                                        .strokeBorder(Color.primaryColor, lineWidth: 4)
+                                                        .background(
+                                                            Capsule()
+                                                                .fill(.green))
+                                                        .modifier(ButtonModifier())
+                                                } else {
+                                                    Capsule()
+                                                        .strokeBorder(Color.primaryColor, lineWidth: 4)
+                                                        .background(
+                                                            Capsule()
+                                                                .fill(Color.buttonColor))
+                                                        .modifier(ButtonModifier())
+                                                }
 
+                                            }
+                                            
+                                            Text("\(model.currentQuestion?.answers[index] ?? "")")
+                                                .ButtonTextStyle()
                                         }
-                                        
-                                        Text("\(model.currentQuestion?.answers[index] ?? "")")
-                                            .ButtonTextStyle()
                                     }
-                                }
-                                .disabled(isSubmitted)
-                               
-                                
-                                
-                            }//ForEach
-                    }//Vstack
-                    .padding(.bottom, 20)
-               
-                
-                
-                
-               
-                
-                //Submit/Next/Finish Button
-                Button {
-                    
-                    if isSubmitted == true {
-                        model.nextQuestion()
-                        progressIncrement()
-                        //Resent properties
-                        isSubmitted = false
-                        selectedAnswer = nil
-                        } else {
-                            
-                            isSubmitted.toggle()
-                            
-                            if selectedAnswer == model.currentQuestion!.correctIndex {
-                                numberCorrect += 1
-                        }
-                        
-                    }
-                  
+                                    .disabled(isSubmitted)
+                                   
+                                    
+                                    
+                                }//ForEach
+                        }//Vstack
+                        .padding(.bottom, 20)
                    
                     
-                } label: {
-                    ZStack {
-                        Capsule()
-                            .strokeBorder(Color.orange, lineWidth: 4)
-                            .background(Capsule().fill(Color.blue))
-                            .frame(height: 50)
-                     
+                    
+                    
+                   
+                    
+                    //Submit/Next/Finish Button
+                    Button {
                         
-                        Text(buttonText)
-                            .ButtonTextStyle()
-                    }
-                }
-                .disabled(selectedAnswer == nil)
-                .padding(.bottom, 10)
-              
-                
-                
-            }//Vstack
-            .navigationBarTitle("\(model.currentQuiz?.category ?? "")")
+                        if isSubmitted == true {
+                            model.nextQuestion()
+                            progressIncrement()
+                            //Resent properties
+                            isSubmitted = false
+                            selectedAnswer = nil
+                            } else {
+                                
+                                isSubmitted.toggle()
+                                
+                                if selectedAnswer == model.currentQuestion!.correctIndex {
+                                    numberCorrect += 1
+                            }
+                            
+                        }
+                    } label: {
+                        ZStack {
+                            Capsule()
+                                .strokeBorder(Color.primaryColor, lineWidth: 4)
+                                .background(Capsule().fill(Color.buttonColor))
+                                .modifier(ButtonModifier())
+                         
+                            
+                            Text(buttonText)
+                                .ButtonTextStyle()
+                        }
+                    }//Submit Button
+                    .disabled(selectedAnswer == nil)
+                    .padding(.bottom, 10)
+                  
+                    
+                    
+                }//Vstack
+                .navigationBarTitle("\(model.currentQuiz?.category ?? "")")
             .padding(.horizontal, 20)
+            }
         } else {
             ResultsView(numberCorrect: numberCorrect)
 //            ProgressView()

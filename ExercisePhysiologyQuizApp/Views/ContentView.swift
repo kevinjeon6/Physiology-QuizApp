@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
        
             ZStack {
-                Color.backgroundColor
+                Color.primaryColor
                     .ignoresSafeArea()
                 VStack(alignment: .leading) {
                     Text("Select a Quiz of Your Choice!")

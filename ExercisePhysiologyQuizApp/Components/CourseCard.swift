@@ -23,7 +23,7 @@ struct CourseCard: View {
         
         ZStack(){
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.cardColor)
+                .fill(Color.secondaryColor)
                 .aspectRatio(CGSize(width: 200, height: 225), contentMode: .fit)
                 .shadow(radius: 10)
             

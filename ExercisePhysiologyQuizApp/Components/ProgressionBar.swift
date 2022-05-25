@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProgressionBar: View {
     @Binding var progressAmount: Float
-    var color: Color = Color.yellow
+    var color: Color = Color.white
 
     
     var body: some View {

@@ -15,7 +15,7 @@ struct WelcomeView: View {
         NavigationView {
             
             ZStack {
-                Color.backgroundColor
+                Color.primaryColor
                     .ignoresSafeArea()
                 
                 VStack (spacing: 20){
@@ -36,7 +36,7 @@ struct WelcomeView: View {
                         ContentView()
                     } label: {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.cardColor)
+                            .fill(Color.secondaryColor)
                             .frame(width: 200, height: 50)
                             .overlay(
                                 Text("Test Your Knowledge")
