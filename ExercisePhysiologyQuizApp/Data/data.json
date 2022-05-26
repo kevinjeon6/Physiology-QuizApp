@@ -5,7 +5,7 @@
         "course": {
             "id": 0,
             "image": "muscle",
-            "description": "This is to test your knowledge on the structure and function of skeletal muscle",
+            "description": "The muscular system works in conjunction with both the nervous system and the skeletal system to create movement of the human body. In response to the nervous system input, the various muscles of the body contract and generate force. The contraction of skeletal muscle causes the bones to which they are attached to move, creating movement of the body parts. The primary components of the muscular system are the individual muscle fibers (i.e, muscle cells). Other components of the muscular system are smooth muscle (e.g., blood vessels and digestive tract)  and cardiac muscle (e.g., heart).",
             "test": {
                 "id": 0,
                 "questions": [
@@ -125,11 +125,11 @@
     },
     {
         "id": 1,
-        "category": "Cardiovascular System",
+        "category": "Cardiovascular",
         "course": {
             "id": 1,
             "image": "cardiovascular",
-            "description": "This is to test your knowledge on the cardiovascular system",
+            "description": "The Cardiovascular system transports blood containing oxygen, nutrients, and other substances (e.g., hormones, electrolytes, and drugs) to the tissues of the body, whereas at the same time facilitating the removal of carbon dioxide and other waste products from the body. It also assists in temperature regulation. The primary components of the cardiovascular system include the heart, arteries, arterioles, capillaries, venules, veins, and blood. The heart is comprised of cardiac muscle and nervous tissue that fat generates the force that propels the blood through the body.",
             "test": {
                 "id": 1,
                 "questions": [
@@ -255,7 +255,7 @@
         "course": {
             "id": 2,
             "image": "bioenergetics",
-            "description": "This is to test your knowledge on bioenergetics",
+            "description": "The ability to produce energy is critical for ensuring normal function in all living cells and tissues of the body. Energy exchange in humans occurs when the foods we eat are broken down into a useable form of energy by the body. The main components of the energy system are the chemical compound called adenosine triphosphate (ATP). Energy to resynthesizes ATP comes from one of the three energy pathways: 1) ATP-PCr; 2) Glycolytic System; and 3) Oxidative System.",
             "test": {
                 "id": 2,
                 "questions": [
@@ -272,7 +272,7 @@
                     },
                     {
                         "id": 1,
-                        "content": "For aerobic metabolism, free fatty acids must b e converted to Acetyl-CoA via?",
+                        "content": "For aerobic metabolism, free fatty acids must be converted to Acetyl-CoA via?",
                         "correctIndex": 2,
                         "answers": [
                             "Krebs Cycle",
@@ -381,7 +381,7 @@
         "course": {
             "id": 3,
             "image": "respiratory",
-            "description": "This is to test your knowledge on Respiratory system",
+            "description": "The Respiratory system brings air into the lungs, allows for oxygen to be removed from the air, and facilitates the elimination of carbon dioxide into the external environment. By regulating the carbon dioxide levels in the blood, the respiratory system also maintains the acid-base balance of the body. The lungs and associated structures create a large surface area between the blood and the external environment that allows for the fast and efficient exchange of oxygen and carbon dioxide in a healthy individual. The respiratory system works in close conjunction with the cardiovascular system, and the two systems are often referred to as the cardiorespiratory or cardiopulmonary system.",
             "test": {
                 "id": 3,
                 "questions": [
@@ -507,7 +507,7 @@
         "course": {
             "id": 4,
             "image": "neural",
-            "description": "This is to test your knowledge on Neural Control of Human Movement",
+            "description": "The Nervous system is one of the two primary control systems of the body (the other primary control system is the Endocrine system). One advantage of the nervous system for controlling the body is that responses can occur very rapidly, typically within a fraction of a second. The nerves system control the voluntary and involuntary actions and functions of the body and works with other systems to regulate  and respond to challenges, such as exercise or disease conditions. The nervous system can be broken down into the central and peripheral nervous system.",
             "test": {
                 "id": 4,
                 "questions": [
@@ -633,7 +633,7 @@
         "course": {
             "id": 5,
             "image": "endocrine",
-            "description": "This is to test your knowledge on Endocrine system",
+            "description": "The Endocrine system is another primary control system (along with the nervous system) of the body. It helps to regulate physiological function and influence the function of other systems of the body.One advantage of the endocrine system for controlling functions is that the hormones can circulate and influence tissues throughout the entire body without requiring a hard connection (as in the nerves system). Furthermore, endocrine changes can influence function for a duration lasting from a few seconds to serval hours. The endocrine system accomplishes these functions through the use of hormones secreted by the various endocrine glands of the body.",
             "test": {
                 "id": 5,
                 "questions": [

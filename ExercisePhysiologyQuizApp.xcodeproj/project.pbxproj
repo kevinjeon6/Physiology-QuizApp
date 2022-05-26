@@ -25,9 +25,6 @@
 		74E5023928257E7A00464427 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5023828257E7A00464427 /* ButtonModifier.swift */; };
 		74E5023D2825879600464427 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E5023C2825879600464427 /* TextExtension.swift */; };
 		74ECAEDA281C82BF0046F30A /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAED9281C82BE0046F30A /* ResultsView.swift */; };
-		74ECAEDD281F0C530046F30A /* AwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAEDC281F0C530046F30A /* AwesomeView.swift */; };
-		74ECAEDF281F0CC80046F30A /* AverageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAEDE281F0CC80046F30A /* AverageView.swift */; };
-		74ECAEE1281F0D130046F30A /* PoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ECAEE0281F0D130046F30A /* PoorView.swift */; };
 		E541FA1A93CF006EF87AE630 /* Pods_ExercisePhysiologyQuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B30C7A7776764AA86991670 /* Pods_ExercisePhysiologyQuizApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +39,7 @@
 		7453F626281736F20002DE5D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7476C5CD281F3C8300E795A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		749C1D2C283816F300F4C1CA /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		749CA08E283FD69F008A6535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74B832C4282AFAE600BD6EB9 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		74CB3F9B28178A2700D1BE00 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		74CC64A22819D684007E846A /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -53,9 +51,6 @@
 		74E5023828257E7A00464427 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		74E5023C2825879600464427 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
 		74ECAED9281C82BE0046F30A /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
-		74ECAEDC281F0C530046F30A /* AwesomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeView.swift; sourceTree = "<group>"; };
-		74ECAEDE281F0CC80046F30A /* AverageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageView.swift; sourceTree = "<group>"; };
-		74ECAEE0281F0D130046F30A /* PoorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoorView.swift; sourceTree = "<group>"; };
 		E9A607ECF684470C2755F9C4 /* Pods-ExercisePhysiologyQuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExercisePhysiologyQuizApp.release.xcconfig"; path = "Target Support Files/Pods-ExercisePhysiologyQuizApp/Pods-ExercisePhysiologyQuizApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +157,7 @@
 		74DF7316281349800096DFA2 /* ExercisePhysiologyQuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				749CA08E283FD69F008A6535 /* Info.plist */,
 				74DF7317281349800096DFA2 /* ExercisePhysiologyQuizAppApp.swift */,
 				749C1D2B283816DD00F4C1CA /* Colors */,
 				74E5023B2825874D00464427 /* Extensions */,
@@ -206,9 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				74ECAED9281C82BE0046F30A /* ResultsView.swift */,
-				74ECAEDC281F0C530046F30A /* AwesomeView.swift */,
-				74ECAEDE281F0CC80046F30A /* AverageView.swift */,
-				74ECAEE0281F0D130046F30A /* PoorView.swift */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -346,10 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74ECAEE1281F0D130046F30A /* PoorView.swift in Sources */,
-				74ECAEDF281F0CC80046F30A /* AverageView.swift in Sources */,
 				74B832C5282AFAE600BD6EB9 /* HeaderComponent.swift in Sources */,
-				74ECAEDD281F0C530046F30A /* AwesomeView.swift in Sources */,
 				74E5023928257E7A00464427 /* ButtonModifier.swift in Sources */,
 				7453F627281736F20002DE5D /* ContentViewModel.swift in Sources */,
 				7412B0E7282AF03300BE700E /* InfoView.swift in Sources */,
@@ -495,7 +485,7 @@
 				DEVELOPMENT_TEAM = 95Y447U3W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ExercisePhysiologyQuizApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -526,7 +516,7 @@
 				DEVELOPMENT_TEAM = 95Y447U3W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ExercisePhysiologyQuizApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

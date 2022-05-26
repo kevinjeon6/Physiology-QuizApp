@@ -39,7 +39,7 @@ struct InfoView: View {
                 } label: {
                     Text("Take the quiz")
                 }
-                .padding(.top, 25)
+                .padding(.vertical, 25)
 
                 
                 
