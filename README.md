@@ -2,7 +2,7 @@
 Test your knowledge on the physiology of the different systems of the human body
 
 
-###Highlights of the app:
+### Highlights of the app:
 - Created a JSON file containing background information for each system, questions, and answers while utilzing Firebase to push the information
 - Parsed JSON data by fetching from Firebase while implementing MVVM design pattern
 - Abstract larger code into smaller ones to make the views more readable and dynamic 
