@@ -44,7 +44,13 @@ struct ResultsView: View {
                   
                 } label: {
                     Text("Complete")
+                        .padding()
                 }
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                    .fill(Color.white)
+                    .frame(width: 200, height: 50)
+                )
 
             }
             
