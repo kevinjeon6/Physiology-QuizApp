@@ -38,24 +38,23 @@ struct ContentView: View {
                                     }
                                   
                                 }),
-                                           tag:quiz.id.hash,
-        //                                    quiz.course.test.id,
+                                           tag://quiz.id.hash,
+                                           quiz.course.test.id.hash,
                                            selection: $model.currentCourseTestSelected)
                             {
                                 CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
                             }
+                           
                             
                         
                         }//ForEach Loop
                         }//LazyVStack
                         .navigationBarHidden(true)
-    //                    .navigationBarTitle("Quizzes")
                         .padding()
                     }
                 }
             }//ScrollView
         //NavigationView
-//        .accentColor(.white)
     }
 }
 

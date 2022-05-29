@@ -30,27 +30,31 @@ struct ResultsView: View {
             Color.primaryColor
                 .ignoresSafeArea()
             
-            VStack (spacing: 10) {
+            VStack (spacing: 30) {
+               
                 Text("\(numberCorrect) out of \(model.currentQuiz?.course.test.questions.count ?? 0)")
                     .font(.system(size: 50, weight: .heavy))
                     .foregroundColor(.white)
-                
+            
                 Text(resultsText)
                     .font(.title)
                     .foregroundColor(.white)
-                
+                    .multilineTextAlignment(.center)
+               
                 Button {
                     model.currentCourseTestSelected = nil
                   
                 } label: {
-                    Text("Complete")
-                        .padding()
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.white)
+                            .frame(width: 200, height: 50)
+                        Text("Complete")
+                            .padding()
+                    }
                 }
-                .background(
-                    RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.white)
-                    .frame(width: 200, height: 50)
-                )
+               
+                
 
             }
             
@@ -62,7 +66,7 @@ struct ResultsView: View {
 
 struct ResultsView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultsView(numberCorrect: 8)
+        ResultsView(numberCorrect: 7)
             .environmentObject(ContentViewModel())
     }
 }
