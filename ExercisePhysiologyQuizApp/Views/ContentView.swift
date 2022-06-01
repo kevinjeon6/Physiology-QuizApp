@@ -10,53 +10,54 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var model: ContentViewModel
-    
 
     
-    
     var body: some View {
-       
+   
+        NavigationView {
             ZStack {
-                Color.primaryColor
-                    .ignoresSafeArea()
-                VStack(alignment: .leading) {
-                    Text("Select a Quiz of Your Choice!")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .padding(.leading, 20)
-                        .padding(.top, 40)
-                    ScrollView {
-                        LazyVStack{
-                        ForEach(model.quizModules) {
-                            quiz in
-                            
-                            NavigationLink(destination: QuizView()
-                                .onAppear(perform: {
-                                    model.getFirebaseQuestions(module: quiz) {
-                                        model.beginQuizModule(quiz.course.test.id)
-                                    }
-                                  
-                                }),
-                                           tag://quiz.id.hash,
-                                           quiz.course.test.id.hash,
-                                           selection: $model.currentCourseTestSelected)
-                            {
-                                CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
+                            Color.primaryColor
+                                .ignoresSafeArea()
+                            VStack(alignment: .leading) {
+                                Text("Select a Quiz of Your Choice!")
+                                    .font(.title2)
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .padding(.leading, 20)
+                                    .padding(.top, 40)
+                                ScrollView {
+                                    LazyVStack{
+                                    ForEach(model.quizModules) {
+                                        quiz in
+                                        
+                                        NavigationLink(destination: QuizView()
+                                            .onAppear(perform: {
+                                                model.getFirebaseQuestions(module: quiz) {
+                                                    model.beginQuizModule(quiz.course.test.id)
+                                                }
+                                              
+                                            }),
+                                                       tag://quiz.id.hash,
+                                                       quiz.course.test.id.hash,
+                                                       selection: $model.currentCourseTestSelected)
+                                        {
+                                            CourseCard(category: quiz.category, description: quiz.course.description, image: quiz.course.image)
+                                        }
+                                        
+                                        
+                                        
+                                    }//ForEach Loop
+                                    }//LazyVStack
+                                    .navigationBarHidden(true)
+                                    .padding()
+                                }
                             }
-                           
-                            
-                        
-                        }//ForEach Loop
-                        }//LazyVStack
-                        .navigationBarHidden(true)
-                        .padding()
-                    }
-                }
-            }//ScrollView
-        //NavigationView
+            }
+        }
+        
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

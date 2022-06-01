@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     
+ 
     
     
     var body: some View {
@@ -34,6 +35,8 @@ struct WelcomeView: View {
                     
                     NavigationLink {
                         ContentView()
+                            .navigationBarBackButtonHidden(true)
+                            .navigationBarHidden(true)
                     } label: {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(Color.secondaryColor)
@@ -46,14 +49,12 @@ struct WelcomeView: View {
                             
                             )
                     }
-
                     Spacer()
 
                 }//Vstack
                 .padding()
             }
         }
-        .navigationBarHidden(true)
     }//body
 }
 
